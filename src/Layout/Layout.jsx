@@ -13,11 +13,11 @@ const Layout = () => {
 
   return (
     <div className="bg-primary overflow-hidden">
-      <div className="w-full h-screen justify-between mx-auto overflow-y-auto overflow-hidden flex ">
+      <div className="w-full h-screen justify-between mx-auto overflow-y-auto flex ">
         <div className=" flex items-start w-full">
           <div
             ref={sidebarRef}
-            className={`lg:relative fixed top-0 lg:top-0 ${open ? "left-0" : "-left-[100%]"
+            className={`lg:relative  fixed top-0 lg:top-0 ${open ? "left-0" : "-left-[100%]"
               } duration-300 ${isSmallScreen ? "w-[250px] h-screen" : "w-[450px] "} z-50 h-[calc(100vh)] overflow-y-auto`}
           >
             {
@@ -26,15 +26,14 @@ const Layout = () => {
 
           </div>
           <div className="w-full">
-            {isSmallScreen && open && (
-              <div className="absolute top-0 left-0 w-full inset-0 bg-black opacity-50 z-20"></div>
-            )}
             <NavbarTop />
             <div className="overflow-y-auto h-[calc(100vh-52px)] ">
               <div className="min-h-[calc(100vh-140px)] md:px-p_24px px-p_12px">
                 <Outlet />
               </div>
+              <div className="w-full h-fit">
               <Copyright />
+              </div>
             </div>
           </div>
         </div>

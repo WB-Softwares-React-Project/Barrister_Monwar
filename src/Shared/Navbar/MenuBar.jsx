@@ -22,7 +22,7 @@ const MenuBar = () => {
 
 
   return (
-    <div className="shadow-md bg-_white h-screen overflow-y-auto p-pl_16px">
+    <div className="shadow-md bg-_white h-screen overflow-y-auto p-pl_16px border border-red-500">
       <div className="bg-_white rounded  w-full ">
         <img className="mb-mb_medium  h-[500px]  w-[400px] " src="https://barristermonwar.com/frontend/assets/images/545.jpg" alt="Barrister Monwar Hossain" />
       </div>
@@ -61,7 +61,7 @@ const MenuBar = () => {
           </div>
           <div className="">
             {/* <p className="text-sm">A Book of honour for the prominent lawyer, well Known social activist in Bangladesh and..</p> */}
-            <button className="p-p_8px text-xs w-full bg-_button  text-white my_primary active:scale-95 transition-all">Read Books</button>
+            <button className="p-p_8px text-xs w-full bg-_button  text-white active:scale-95 transition-all">Read Books</button>
           </div>
         </div>
 

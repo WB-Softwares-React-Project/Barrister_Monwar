@@ -114,7 +114,7 @@ const EngProfile = () => {
         <div>
             <div >
                 <Tabs  >
-                    <TabList className="my-mt_24px bg-white  flex justify-evenly ">
+                    <TabList className="my-mt_24px bg-white  grid grid-cols-5 overflow-auto items-center">
                         <Tab onClick={() => handleClick('/profile-english')} className={`hover:shadow-md  px-pt_8px lg:px-0 py-p_12px w-full text-center text-xs  md:text-base  ${selected === '/profile-english' ? 'bg-bg_selected  text-white hover:text-white font-medium hover:bg-bg_selected ' : 'text-[#585c66] font-medium hover:text-[#ffffff]  hover:bg-bg_selected transition-all  '}`}>
                             <Link >
 
@@ -127,12 +127,12 @@ const EngProfile = () => {
                             </Link>
                         </Tab>
                         <Tab onClick={() => handleClick('/awards')} className={`hover:shadow-md  px-pt_8px lg:px-0 py-p_12px w-full text-center text-xs  md:text-base ${selected === '/awards' ? 'bg-bg_selected  text-white hover:text-white font-medium hover:bg-bg_selected ' : 'text-[#585c66] font-medium hover:text-[#ffffff]  hover:bg-bg_selected transition-all  '}`}>
-                            <Link className="flex gap-1 items-center justify-center">
+                            <Link className="">
                                 Awards
                             </Link>
                         </Tab>
                         <Tab onClick={() => handleClick('/work')} className={`hover:shadow-md  px-pt_8px lg:px-0 py-p_12px w-full text-center text-xs  md:text-base ${selected === '/work' ? 'bg-bg_selected  text-white hover:text-white font-medium hover:bg-bg_selected ' : 'text-[#585c66] font-medium hover:text-[#ffffff]  hover:bg-bg_selected transition-all  '}`}>
-                            <Link className="flex gap-1 items-center justify-center">
+                            <Link className="text-nowrap">
                                 Social work
                             </Link>
                         </Tab>
