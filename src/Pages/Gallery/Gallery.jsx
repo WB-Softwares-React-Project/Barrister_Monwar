@@ -19,6 +19,7 @@ const Gallery = () => {
             }
           ></GalleryCard>
         </div>
+        {/* gallery pagination  */}
         <div className="mt-mt_16px px-pr_16px pb-p_8px flex justify-between items-center">
           <p className="text-[212529BF]">Showing 1 to 12 of 58 results</p>
           <nav aria-label="Page navigation example">
