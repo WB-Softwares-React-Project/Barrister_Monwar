@@ -6,7 +6,7 @@ const Quotes = () => {
     const ctitle = "ব্যারিস্টার মনোয়ার চট্টগ্রামের রাজনৈতিক, সামাজিক ও সাংস্কৃতিক আন্দোলনের সাথেও যুক্ত ছিলেন । তাঁর বক্তব্যের মধ্যে সারগর্ভ বিষয় থাকতো । আমি আশা: করবো আগামী দিনে আরো বৃহত্তর পরিবেশে তিনি নেতৃত্বের ভূমিকায় অবতীর্ণ হবেন ।"
     return (
         <div className="px-4 pb-12 mt-4 mb-4 bg-white">
-            <h2 className="text-xl font-normal py-4 border-b mb-6 uppercase">Charitable Work</h2>
+            <h2 className="text-xl font-normal py-4 border-b mb-6 uppercase">Quotes</h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3">
             <div className="p-4 shadow-2xl">
                     <div className="flex justify-center">

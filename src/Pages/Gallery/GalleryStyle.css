@@ -1,0 +1,32 @@
+.GCard{
+position: relative;
+}
+
+.GCardInner::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+    transition: .8s;
+}
+.GCardInner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: .8s;
+}
+.GCard:hover .GCardInner::after,
+.GCard:hover .GCardInner::before{
+    border-color: #0d6efd;
+    width: 100%;
+    height: 100%;
+}
