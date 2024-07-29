@@ -6,6 +6,7 @@ const CharitableWork = () => {
             <h2 className="text-xl font-normal py-pt_16px border-b mb-mt_16px uppercase">Charitable Work</h2>
 
             <div className="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2   gap-4">
+                {/* card component */}
                 <div className="p-pl_16px shadow-2xl">
                     <div className="">
                         <img className="w-full" src={charitableImg} alt="" />

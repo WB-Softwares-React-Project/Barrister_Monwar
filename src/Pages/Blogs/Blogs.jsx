@@ -11,6 +11,7 @@ const Blogs = () => {
 
                 <h2 className="text-text_lg font-normal py-pt_16px border-b mb-mb_24px">Blogs of Barrister Monwar Hossain</h2>
                 <div className="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2   gap-4">
+                    {/* blog card start */}
                     <Link to="/blog-details/01" className="px-pt_16px pt-pl_16px shadow-xl border ">
                         <h4 className="text-base  mb-mt_16px font-bold">ব্যারিস্টার মনোয়ার হোসেন চট্টগ্রামের উন্নয়ন ও আন্দোলনের ইতিহাসের বরপুত্র</h4>
                         <div className="">
@@ -18,8 +19,11 @@ const Blogs = () => {
                         </div>
                         <p className="mt-mt_24px mb-mt_16px text-justify">চট্টগ্রাম জেলা পরিষদের চেয়ারম্যান ও চট্টগ্রাম উত্তর জেলা আওয়ামী লীগের সহ সভাপতি এটিএম পেয়ারুল ইসলাম বলেছেন, চট্টগ্রাম বীর প্রসবিণী চট্টগ্রাম। চট্টগ্রাম ইতিহাস সৃষ্টির সূতিকাগার। বূর সন্তান মাস্টার দা সূর্য সেন,প্রীতিলতা</p>
                     </Link>
+                    {/* blog card end */}
                 </div>
                 <div className="mt-mt_16px px-pr_16px flex justify-between items-center">
+
+                    {/* blog pagination */}
                     <p className="text-[212529BF]">Showing 1 to 12 of 58 results</p>
                     <nav aria-label="Page navigation example">
                         <ul className="flex items-center -space-x-px h-10 text-base">

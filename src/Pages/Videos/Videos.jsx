@@ -13,6 +13,7 @@ const Videos = () => {
                 <h2 className="text-xl font-normal py-4 border-b mb-6">Videos of Barrister Monwar Hossain</h2>
 
                 <div className="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 gap-4">
+                    {/* card */}
                     <div className="py-p_24px px-pt_8px border shadow-2xl">
                         <a href="https://www.youtube.com/watch?v=GarOs75CpYA" target="_blank">
                             <div className="">
@@ -22,6 +23,7 @@ const Videos = () => {
                         </a>
                     </div>
                 </div>
+                {/* video pagination */}
                 <div className="mt-mt_16px px-pr_16px flex justify-between items-center">
                     <p className="text-[212529BF]">Showing 1 to 12 of 58 results</p>
                     <nav aria-label="Page navigation example">
