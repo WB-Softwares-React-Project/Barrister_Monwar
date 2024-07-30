@@ -22,7 +22,7 @@ const MenuBar = () => {
 
 
   return (
-    <div className="shadow-md bg-_white h-screen overflow-y-auto p-pl_16px border border-red-500">
+    <div className="shadow-md bg-_white h-screen overflow-y-auto p-pl_16px overscroll-none">
       <div className="bg-_white rounded  w-full ">
         <img className="mb-mb_medium  h-[500px]  w-[400px] " src="https://barristermonwar.com/frontend/assets/images/545.jpg" alt="Barrister Monwar Hossain" />
       </div>

@@ -12,13 +12,13 @@ const Layout = () => {
   const [isSmallScreen] = useSmallScreen();
 
   return (
-    <div className="bg-primary overflow-hidden">
-      <div className="w-full h-screen justify-between mx-auto overflow-y-auto flex ">
+    <div className="bg-primary overflow-hidden overscroll-none  h-screen">
+      <div className="w-full h-screen justify-between mx-auto overflow-y-auto overscroll-none flex ">
         <div className=" flex items-start w-full">
           <div
             ref={sidebarRef}
             className={`lg:relative  fixed top-0 lg:top-0 ${open ? "left-0" : "-left-[100%]"
-              } duration-300 ${isSmallScreen ? "w-[250px] h-screen" : "w-[450px] "} z-50 h-[calc(100vh)] overflow-y-auto`}
+              } duration-300 ${isSmallScreen ? "w-[250px] h-screen" : "w-[450px] "} z-50 h-[calc(100vh)] overflow-y-auto overscroll-none`}
           >
             {
               isSmallScreen ? <NavLink /> : <MenuBar></MenuBar>
@@ -27,7 +27,7 @@ const Layout = () => {
           </div>
           <div className="w-full">
             <NavbarTop />
-            <div className="overflow-y-auto h-[calc(100vh-52px)] ">
+            <div className="overflow-y-auto overscroll-none h-[calc(100vh-52px)] ">
               <div className="min-h-[calc(100vh-140px)] md:px-p_24px px-p_12px">
                 <Outlet />
               </div>
