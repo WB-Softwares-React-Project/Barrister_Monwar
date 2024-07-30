@@ -12,7 +12,7 @@ const Layout = () => {
   const [isSmallScreen] = useSmallScreen();
 
   return (
-    <div className="bg-primary overflow-hidden overscroll-none  h-screen">
+    <div className="bg-primary overflow-hidden overscroll-none ">
       <div className="w-full h-screen justify-between mx-auto overflow-y-auto overscroll-none flex ">
         <div className=" flex items-start w-full">
           <div
@@ -28,10 +28,10 @@ const Layout = () => {
           <div className="w-full">
             <NavbarTop />
             <div className="overflow-y-auto overscroll-none h-[calc(100vh-52px)] ">
-              <div className="min-h-[calc(100vh-140px)] md:px-p_24px px-p_12px">
+              <div className="min-h-[calc(100vh-140px)] md:px-p_24px px-p_12px overscroll-none ">
                 <Outlet />
               </div>
-              <div className="w-full h-fit">
+              <div className="">
               <Copyright />
               </div>
             </div>
